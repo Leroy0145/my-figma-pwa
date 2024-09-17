@@ -7,11 +7,20 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Figma PWA">
     <title>Figma PWA</title>
+    <!-- Your custom icons -->
     <link rel="icon" href="icon-192x192.png">
     <link rel="apple-touch-icon" href="icon-192x192.png">
-    <meta http-equiv="refresh" content="0;url=https://www.figma.com/proto/p0f769WuY2RpXGvAIvfYnR/Pay4?node-id=28-4657&t=cBieSSY0flmMQPri-1">
+    <link rel="manifest" href="/manifest.json">
+    <!-- Delay redirection script -->
+    <script>
+        // Redirect to Figma after a 2-second delay to ensure the PWA manifest loads
+        setTimeout(function() {
+            window.location.href = "https://www.figma.com/proto/your-project";
+        }, 2000); // Delay for 2 seconds (2000 milliseconds)
+    </script>
 </head>
 <body>
-    <p>Redirecting to Figma prototype...</p>
+    <h1>Welcome to Figma PWA</h1>
+    <p>Redirecting to Figma prototype in 2 seconds...</p>
 </body>
 </html>
