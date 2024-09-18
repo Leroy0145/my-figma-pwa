@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Figma PWA">
+    <meta name="apple-mobile-web-app-title" content="Pay4">
     <title>Pay4</title>
     <!-- Custom icons for your app -->
     <link rel="icon" href="icon-192x192.png">
@@ -21,21 +21,32 @@
             align-items: center;
             font-family: Arial, sans-serif;
             text-align: center;
+            background-color: #f0f0f0;
         }
         .container {
-            padding: 20px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        iframe {
+            flex-grow: 1;
+            width: 100%;
+            border: none;
+        }
+        .header {
+            background-color: #1F9680;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
         }
     </style>
-    <script>
-        // Redirect to Figma prototype immediately
-        window.onload = function() {
-            window.location.href = 'https://www.figma.com/proto/p0f769WuY2RpXGvAIvfYnR/Pay4?node-id=28-4657&t=cBieSSY0flmMQPri-1';
-        };
-    </script>
 </head>
 <body>
     <div class="container">
-        <h1>Redirecting to Pay4 Prototype...</h1>
+        <div class="header">Pay4 Prototype</div>
+        <iframe src="https://www.figma.com/proto/p0f769WuY2RpXGvAIvfYnR/Pay4?node-id=28-4657&t=cBieSSY0flmMQPri-1" allowfullscreen></iframe>
     </div>
 </body>
 </html>
