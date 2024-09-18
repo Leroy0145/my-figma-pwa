@@ -7,6 +7,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Figma PWA">
     <title>Figma PWA</title>
+    <!-- Custom icons for your app -->
     <link rel="icon" href="icon-192x192.png">
     <link rel="apple-touch-icon" href="icon-192x192.png">
     <link rel="manifest" href="/manifest.json">
@@ -18,16 +19,31 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
         }
-        iframe {
+        .container {
+            padding: 20px;
+        }
+        button {
+            background-color: #26E986;
             border: none;
-            width: 100%;
-            height: 100%;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #1DBB6F;
         }
     </style>
 </head>
 <body>
-    <!-- Iframe embedding the Figma prototype -->
-    <iframe src="https://www.figma.com/proto/p0f769WuY2RpXGvAIvfYnR/Pay4?node-id=28-4657&t=cBieSSY0flmMQPri-1" title="Figma Prototype"></iframe>
+    <div class="container">
+        <h1>Welcome to Figma PWA</h1>
+        <p>To view the prototype, click the button below to open it in a new tab:</p>
+        <button onclick="window.open('https://www.figma.com/proto/p0f769WuY2RpXGvAIvfYnR/Pay4?node-id=28-4657&t=cBieSSY0flmMQPri-1', '_blank')">Open Figma Prototype</button>
+    </div>
 </body>
 </html>
